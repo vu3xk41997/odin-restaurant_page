@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Molluca';
+    src: url('./Molluca-font.woff2') format('woff2'), url('./Molluca-font.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Molluca';
+    font-size: 64px;
+    font-weight: bolder;
+    background-image: url("./background.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
