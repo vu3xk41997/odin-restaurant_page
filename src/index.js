@@ -1,23 +1,28 @@
 import './style.css';
-// import Background from './background.jpg';
+import container from './home';
+import { header } from './header';
+import menu from './menu';
+import contact from './contact';
 
-// function background() {
-    // const element = document.getElementById('content');
-    
-    // element.classList.add('background');
+document.getElementById('content').appendChild(header()); // default display = flex
+document.getElementById('content').appendChild(container()); // default display = flex
+document.getElementById('content').appendChild(menu()); // default display = none
+document.getElementById('content').appendChild(contact()); //default display = none
 
-    // const myBackground = new Image();
-    // myBackground.src = Background;
-    // element.appendChild(myBackground);
+document.getElementById('home').addEventListener('click', function(event){
+    document.getElementsByClassName('container')[0].style.display = "flex";
+    document.getElementsByClassName('menu-box')[0].style.display = "none";
+    document.getElementsByClassName('contact-box')[0].style.display = "none";
+})
 
-    // return element;
-// }
- 
-// document.body.appendChild(background());
+document.getElementById('menu').addEventListener('click', function(event){
+    document.getElementsByClassName('container')[0].style.display = "none";
+    document.getElementsByClassName('menu-box')[0].style.display = "flex";
+    document.getElementsByClassName('contact-box')[0].style.display = "none";
+})
 
-function logo(){
-    const element = document.createElement('H1');
-    element.innerHTML = "The Place";
-    return element;
-}
-document.getElementById('content').appendChild(logo());
+document.getElementById('contact').addEventListener('click', function(event){
+    document.getElementsByClassName('container')[0].style.display = "none";
+    document.getElementsByClassName('menu-box')[0].style.display = "none";
+    document.getElementsByClassName('contact-box')[0].style.display = "flex";
+})

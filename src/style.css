@@ -1,11 +1,9 @@
 @font-face {
-    font-family: 'Molluca';
-    src: url('./Molluca-font.woff2') format('woff2'), url('./Molluca-font.woff') format('woff');
+    font-family: 'SaveurSans';
+    src: url('./SaveurSans.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
-
-
 
 body, html {
     height: 100%;
@@ -14,15 +12,101 @@ body, html {
 
 #content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    font-family: 'Molluca';
-    font-size: 64px;
-    font-weight: bolder;
+    font-family: 'SaveurSans';
     background-image: url("./background.jpg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+}
+
+.header li {
+    list-style: none;
+    font-size: 36px;
+    margin: 0px 24px;
+}
+
+.header li:hover {
+    color: rgb(189, 189, 189);
+}
+
+#menu, #home, #contact {
+    cursor: pointer;
+}
+
+.container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 0px;
+}
+
+.menu-box {
+    height: 85vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box p {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.contact-box {
+    height: 85vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box p {
+    /* width: 380px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 12px 0px;
+    white-space: nowrap;
 }
