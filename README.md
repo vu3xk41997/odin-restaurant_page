@@ -1,2 +1,5 @@
 # odin-restaurant_page
-Project for Javascript ES6
+Project using webpack and Javascript modules.
+
+## Live Demo
+[Live Demo](https://vu3xk41997.github.io/odin-restaurant_page/)
